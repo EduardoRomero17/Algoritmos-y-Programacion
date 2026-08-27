@@ -1,0 +1,33 @@
+Algoritmo circuito1
+	//Eduardo Romero Toraya
+	Definir p, q Como Logico
+	p<-Verdadero
+	q<-Verdadero
+	
+	Escribir "p AND q", p y q
+	Escribir "NOT q", no q
+	Escribir "(p AND q) OR (NOT q)=", (p y q) o (no q)
+	
+	p<-Verdadero
+	q<-Falso
+	
+	Escribir "p AND q", p y q
+	Escribir "NOT q", no q
+	Escribir "(p AND q) OR (NOT q)=", (p y q) o (no q)
+	
+	p<-Falso
+	q<-Verdadero 
+	
+	Escribir "p AND q", p y q
+	Escribir "NOT q", no q
+	Escribir "(p AND q) OR (NOT q)=", (p y q) o (no q)
+	
+	p<-Falso
+	q<-Falso
+	
+	Escribir "p AND q", p y q
+	Escribir "NOT q", no q
+	Escribir "(p AND q) OR (NOT q)=", (p y q) o (no q)
+	
+	
+FinAlgoritmo
