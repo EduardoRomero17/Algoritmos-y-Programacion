@@ -1,21 +1,24 @@
 #Eduardo Romero Toraya
-#Apunte 2
-#Solicitar la edad de una persona y clasificarlos de acuerdo a la siguiente tabla
-#Niño   menores de 12 años
-#Adolescente    mayores o iguales a 12 y menores de 18
-#Adulto     mayores o iguales a 18 y menores de 60
-#Adulto mayor   mayores o iguales a 60
+#Un vendedor reecibe un sueldo basico mas una comision del 10 % si su venta es menor que 100, 000 pessos o del 15% si si venta es mayor o igual a 100, 000 pesos"
+#El vendedor desea saber cuanto dinero obtendra por concepto de comision y su sueldo."
 
-print("Ingresa la edad")
-edad=int(input())
+print ("Sueldo basico")
+sueBas = float (input())
 
-if edad < 12 :
-    print("Eres un niño")
-else: 
-    if edad >= 12 and edad < 18:
-        print("Eres un adolescente")
-    else: 
-        if edad >= 18 and edad < 60:
-            print("Eres un adulto")
-        else:
-            print("Eres un adulto mayor")
+print ("Valor de venta")
+valVen = float (input())
+
+#procesos parciales
+
+if valVen < 100000:
+    porCom = 10
+else:
+    porCom = 15
+
+valCom = ( valVen * porCom)/100
+sueNet = sueBas + valCom
+
+#Datos de salida parciales
+print ("Porcentaje de comision", porCom)
+print ("Valor de la comsion", valCom)
+print ("Sueldo neto", sueNet)
